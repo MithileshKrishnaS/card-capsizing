@@ -1,0 +1,69 @@
+body{
+    background-image: linear-gradient(to right,#4158D0, #C850C0 , #FFCC70);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1{
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+}
+
+#one{
+    width :300px;
+    height:600px;
+}
+
+#two{
+    width :300px;
+    height:250px;
+}
+
+.flip{
+    width: 300px;
+    height: 600px;
+    perspective: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.card-body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip:hover .card-body {
+    transform: rotateY(180deg);
+}
+
+.front , .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.back{
+    transform: rotateY(180deg);
+    background-color: white;
+}
+
+#para{
+    text-align: justify;
+    margin: 5% 5% 5% 5%;
+}
+
+#last{
+    background-color: red;
+    color: white;
+    text-align: right;
+    padding: 9px;
+    font-size: 20.5px;
+}
+
+h2{
+    text-align: center;
+}
